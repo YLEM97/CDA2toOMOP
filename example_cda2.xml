@@ -1,0 +1,2520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"
+    xmlns:mif="urn:hl7-org:v3/mif"
+    xsi:schemaLocation="urn:hl7-org:v3 C:\xmlcda\Specifiche\hl7\cda\CDA.xsd"
+    xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2">
+    <realmCode code="IT" />
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02" />
+    <templateId root="2.16.840.1.113883.2.9.10.1.1" extension="1.3"
+        assigningAuthorityName="HL7 Italia" />
+    <id root="2.16.840.1.113883.2.9.2.70.4.4.1" extension="901.LAB.260001243437" />
+    <code code="11502-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+        codeSystemVersion="2.19" displayName="Referto di Laboratorio" />
+    <title>Referto di Laboratorio</title>
+    <effectiveTime value="20260320150220+0100" />
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"
+        codeSystemName="HL7 Confidentiality" displayName="Normale" />
+    <languageCode code="it-IT" />
+    <setId root="2.16.840.1.113883.2.9.2.70.4.4.1" extension="901.LAB.260001243437" />
+    <versionNumber value="1" />
+    <recordTarget typeCode="RCT" contextControlCode="OP">
+        <patientRole classCode="PAT">
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="RSSCLL92A41D969E"
+                assigningAuthorityName="Ministero Economia e Finanze" displayable="true" />
+            <id root="2.16.840.1.113883.2.9.2.70.4.4.1" extension="4990003007"
+                assigningAuthorityName="Laboratorio Analisi" displayable="true" />
+            <addr use="HP">
+                <country>ITA</country>
+                <county>010046</county>
+                <city>GENOVA</city>
+                <postalCode>16100</postalCode>
+                <streetAddressLine>
+                </streetAddressLine>
+            </addr>
+            <addr use="H">
+                <country>ITA</country>
+                <county>010025</county>
+                <city>GENOVA</city>
+                <postalCode>16100</postalCode>
+                <streetAddressLine>
+                </streetAddressLine>
+            </addr>
+            <patient classCode="PSN" determinerCode="INSTANCE">
+                <name>
+                    <family>ROSSI</family>
+                    <given>CLELIA</given>
+                </name>
+                <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"
+                    codeSystemName="HL7 AdministrativeGender" codeSystemVersion="1.0"
+                    displayName="FEMALE" />
+                <birthTime value="19920101" />
+                <birthplace classCode="BIRTHPL">
+                    <place classCode="PLC" determinerCode="INSTANCE">
+                        <addr use="HP">
+                            <country>ITA</country>
+                            <state>LIGURIA</state>
+                            <city>GENOVA</city>
+                            <censusTract>010046</censusTract>
+                        </addr>
+                    </place>
+                </birthplace>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <author>
+        <time value="20260320150455+0100" />
+        <assignedAuthor classCode="ASSIGNED">
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="LGGRMN65B28D969J" displayable="true" />
+            <telecom use="WP" value="mailto:pec@pec.esempio.it" />
+            <telecom use="WP" value="mailto:pec@pec.esempio.it" />
+            <telecom use="WP" value="tel:+390103344" />
+            <assignedPerson>
+                <name>
+                    <family>LOGGIA</family>
+                    <given>ROMANO</given>
+                </name>
+            </assignedPerson>
+        </assignedAuthor>
+    </author>
+    <custodian typeCode="CST">
+        <assignedCustodian classCode="ASSIGNED">
+            <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+                <id root="2.16.840.1.113883.2.9.4.1.1" extension="112233"
+                    assigningAuthorityName="Ministero della Salute" />
+                <name>HOSPITAL</name>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <informationRecipient typeCode="PRCP">
+        <intendedRecipient classCode="ASSIGNED">
+            <receivedOrganization>
+                <id root="2.16.840.1.113883.2.9.2.103.4.11" extension="TEST MICRO"
+                    assigningAuthorityName="Laboratorio Analisi" displayable="true" />
+                <name>TEST MICRO UNIT</name>
+            </receivedOrganization>
+        </intendedRecipient>
+    </informationRecipient>
+    <legalAuthenticator typeCode="LA" contextControlCode="OP">
+        <time value="20260320150455+0100" />
+        <signatureCode code="S" />
+        <assignedEntity>
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="LGGRMN65B28D969J"
+                assigningAuthorityName="Ministero Economia e Finanze" displayable="true" />
+            <assignedPerson>
+                <name>
+                    <prefix>
+                    </prefix>
+                    <family>LOGGIA</family>
+                    <given>ROMANO</given>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </legalAuthenticator>
+    <participant typeCode="DEV" nullFlavor="MSK">
+        <time value="20260320145400+0100" />
+        <associatedEntity classCode="LIC" nullFlavor="MSK">
+            <id displayable="false" extension="2.16.840.1.113883.2.9.2.50.4.5.00077"
+                root="2.16.840.1.113883.2.9.2.70.4.5" />
+            <scopingOrganization>
+                <id root="2.16.840.1.113883.2.9.2.70103.4.8" extension="TEST MICRO"
+                    assigningAuthorityName="Laboratorio Analisi" displayable="true" />
+                <name>TEST MICRO UNIT</name>
+            </scopingOrganization>
+        </associatedEntity>
+    </participant>
+    <inFulfillmentOf>
+        <order classCode="ACT" moodCode="RQO">
+            <id root="2.16.840.1.113883.2.9.2.70103.4.8" extension="4990003007"
+                assigningAuthorityName="Laboratorio Analisi" displayable="true" />
+            <priorityCode code="R" codeSystem="2.16.840.1.113883.5.7"
+                codeSystemName="HL7 ActPriority" displayName="routine" />
+        </order>
+    </inFulfillmentOf>
+    <documentationOf typeCode="DOC">
+        <serviceEvent classCode="ACT" moodCode="EVN">
+            <code nullFlavor="UNK" />
+            <performer typeCode="PRF">
+                <templateId root="1.3.6.1.4.1.19376.1.3.3.1.7" />
+                <assignedEntity>
+                    <id root="2.16.840.1.113883.2.9.4.3.2" extension="TSCRLD65H24D969E" />
+                    <assignedPerson>
+                        <name>
+                            <given>TOSCANI</given>
+                            <family>RINALDO</family>
+                        </name>
+                    </assignedPerson>
+                    <representedOrganization>
+                        <id root="2.16.840.1.113883.2.9.4.1.1" extension="070901" displayable="true" />
+                        <name use="A">MICROBIOLOGY UNIT</name>
+                        <name use="I">HOSPITAL</name>
+                    </representedOrganization>
+                </assignedEntity>
+            </performer>
+        </serviceEvent>
+    </documentationOf>
+    <authorization typeCode="AUTH">
+        <consent classCode="CONS" moodCode="EVN">
+            <code code="dist_restr" codeSystem="2.16.840.1.113883.2.9.99"
+                codeSystemName="Schema Codifica Consenso GLCDA"
+                displayName="Il documento non deve essere pubblicato" />
+            <statusCode code="completed" />
+        </consent>
+    </authorization>
+    <componentOf typeCode="COMP">
+        <encompassingEncounter classCode="ENC" moodCode="EVN">
+            <id nullFlavor="UNK" />
+            <effectiveTime>
+                <low value="20260320103500+0100" />
+                <high value="20260320145400+0100" />
+            </effectiveTime>
+            <encounterParticipant typeCode="CON">
+                <assignedEntity>
+                    <id root="2.16.840.1.113883.2.9.4.3.2" extension="RSSCLL92A41D969E" />
+                    <assignedPerson>
+                        <name>
+                            <family>ROSSI</family>
+                            <given>CLELIA</given>
+                        </name>
+                    </assignedPerson>
+                </assignedEntity>
+            </encounterParticipant>
+        </encompassingEncounter>
+    </componentOf>
+    <component>
+        <structuredBody>
+            <component>
+                <section ID="COMPLETENESS">
+                    <code code="26436-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="LABORATORY STUDIES" />
+                    <text>
+                        <content ID="orderCompleteness" /> Referto Completo </text>
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <code code="26436-6" codeSystem="2.16.840.1.113883.6.1"
+                                codeSystemName="LOINC" displayName="LABORATORY STUDIES" />
+                            <statusCode code="completed" />
+                            <entryRelationship typeCode="SUBJ" inversionInd="true">
+                                <act classCode="ACT" moodCode="EVN">
+                                    <code code="48767-8" codeSystem="2.16.840.1.113883.6.1"
+                                        codeSystemName="LOINC" displayName="Annotation comment" />
+                                    <text>
+                                        <reference value="#orderCompleteness" />
+                                    </text>
+                                </act>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <section ID="SECT-GT40">
+                    <code code="18719-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Batteriologia" />
+                    <component>
+                        <section>
+                            <code code="CEMAE" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                codeSystemName="DNLAB"
+                                displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI">
+                                <translation code="CEMAE"
+                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                    codeSystemName="DNLAB"
+                                    displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI" />
+                            </code>
+                            <title>EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI</title>
+                            <text>
+                                <br />
+                                <list>
+                                    <item>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Esame</th>
+                                                    <th>Esito</th>
+                                                    <th>Abnormal Flag</th>
+                                                    <th>Unità di Misura</th>
+                                                    <th>Range di Riferimento</th>
+                                                    <th>Metodo</th>
+                                                </tr>
+                                                <tr ID="testID---CEMAE---CEMAE---2-0">
+                                                    <th>EMOCOLTURA DA VENA PERIFERICA PER RICERCA
+                                                        GERMI AEROBI</th>
+                                                    <td ID="SIGLA_NO_UOM100">Positivo</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Ceppo Identificato</th>
+                                                    <th>Nome</th>
+                                                    <th>InfoAgg.1</th>
+                                                    <th>InfoAgg.2</th>
+                                                    <th>Note</th>
+                                                </tr>
+                                                <tr
+                                                    ID="testMicroOrganism_CEMAE-1-CEMAE-1-0-strfae-2-0-1">
+                                                    <td>Ceppo 1</td>
+                                                    <td>Enterococcus faecalis</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </item>
+                                </list>
+                            </text>
+                            <entry typeCode="DRIV">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <code code="CEMAE" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                        codeSystemName="DNLAB"
+                                        displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI">
+                                        <translation code="CEMAE"
+                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                            codeSystemName="DNLAB"
+                                            displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI" />
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <specimenPlayingEntity>
+                                                <code code="USUB"
+                                                    codeSystem="2.16.840.1.113883.5.129"
+                                                    codeSystemName="SpecimenType">
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="MATERIALE"
+                                                        displayName="Emocoltura" />
+                                                </code>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
+                                    <entryRelationship typeCode="COMP">
+                                        <organizer moodCode="EVN" classCode="CLUSTER">
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <specimen typeCode="SPC">
+                                                <specimenRole classCode="SPEC">
+                                                    <id root="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        extension="testMicroOrganism_CEMAE-1-CEMAE-1-0-strfae-2-0-1" />
+                                                    <specimenPlayingEntity classCode="MIC">
+                                                        <code code="strfae"
+                                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                            codeSystemName="DNLAB"
+                                                            displayName="Enterococcus faecalis" />
+                                                    </specimenPlayingEntity>
+                                                </specimenRole>
+                                            </specimen>
+                                            <component>
+                                                <observation moodCode="EVN" classCode="OBS">
+                                                    <code code="CEMAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                        codeSystemName="DNLAB"
+                                                        displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI">
+                                                        <translation code="CEMAE"
+                                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                            codeSystemName="DNLAB"
+                                                            displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI" />
+                                                    </code>
+                                                    <statusCode code="completed" />
+                                                    <effectiveTime value="20260101080000+0200" />
+                                                    <value xsi:type="ST">Positivo</value>
+                                                    <interpretationCode code="POS"
+                                                        codeSystem="2.16.840.1.113883.5.83"
+                                                        codeSystemName="HL7 Observation Interpretation" />
+                                                </observation>
+                                            </component>
+                                        </organizer>
+                                    </entryRelationship>
+                                </act>
+                            </entry>
+                        </section>
+                    </component>
+                    <component>
+                        <section>
+                            <code code="TP1" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                codeSystemName="DNLAB" displayName="Tempo di positivizzazione">
+                                <translation code="TP1" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                    codeSystemName="DNLAB" displayName="Tempo di positivizzazione" />
+                            </code>
+                            <title>Tempo di positivizzazione</title>
+                            <text>
+                                <br />
+                                <list>
+                                    <item>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Esame</th>
+                                                    <th>Esito</th>
+                                                    <th>Abnormal Flag</th>
+                                                    <th>Unità di Misura</th>
+                                                    <th>Range di Riferimento</th>
+                                                    <th>Metodo</th>
+                                                </tr>
+                                                <tr ID="testID---TP1---TP1---2-0">
+                                                    <th>Tempo di positivizzazione</th>
+                                                    <td ID="ALFA_NO_UOM101">0d 11h 35min</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </item>
+                                </list>
+                            </text>
+                            <entry typeCode="DRIV">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <code code="TP1" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                        codeSystemName="DNLAB"
+                                        displayName="Tempo di positivizzazione">
+                                        <translation code="TP1"
+                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                            codeSystemName="DNLAB"
+                                            displayName="Tempo di positivizzazione" />
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <specimenPlayingEntity>
+                                                <code code="USUB"
+                                                    codeSystem="2.16.840.1.113883.5.129"
+                                                    codeSystemName="SpecimenType">
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="MATERIALE"
+                                                        displayName="Emocoltura" />
+                                                </code>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
+                                    <entryRelationship typeCode="COMP">
+                                        <observation moodCode="EVN" classCode="OBS">
+                                            <code code="TP1"
+                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                codeSystemName="DNLAB"
+                                                displayName="Tempo di positivizzazione">
+                                                <translation code="TP1"
+                                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                    codeSystemName="DNLAB"
+                                                    displayName="Tempo di positivizzazione" />
+                                            </code>
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <value xsi:type="ST">0d 11h 35min</value>
+                                        </observation>
+                                    </entryRelationship>
+                                </act>
+                            </entry>
+                        </section>
+                    </component>
+                    <component>
+                        <section>
+                            <code code="ESMIC1" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                codeSystemName="DNLAB" displayName="Esame microscopico">
+                                <translation code="ESMIC1"
+                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                    codeSystemName="DNLAB" displayName="Esame microscopico" />
+                            </code>
+                            <title>Esame microscopico</title>
+                            <text>
+                                <br />
+                                <list>
+                                    <item>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Esame</th>
+                                                    <th>Esito</th>
+                                                    <th>Abnormal Flag</th>
+                                                    <th>Unità di Misura</th>
+                                                    <th>Range di Riferimento</th>
+                                                    <th>Metodo</th>
+                                                </tr>
+                                                <tr ID="testID---ESMIC1---ESMIC1---2-0">
+                                                    <th>Esame microscopico</th>
+                                                    <td ID="SIGLA_NO_UOM102">Cocchi Gram positivi</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </item>
+                                </list>
+                            </text>
+                            <entry typeCode="DRIV">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <code code="ESMIC1" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                        codeSystemName="DNLAB" displayName="Esame microscopico">
+                                        <translation code="ESMIC1"
+                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                            codeSystemName="DNLAB" displayName="Esame microscopico" />
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <specimenPlayingEntity>
+                                                <code code="USUB"
+                                                    codeSystem="2.16.840.1.113883.5.129"
+                                                    codeSystemName="SpecimenType">
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="MATERIALE"
+                                                        displayName="Emocoltura" />
+                                                </code>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
+                                    <entryRelationship typeCode="COMP">
+                                        <observation moodCode="EVN" classCode="OBS">
+                                            <code code="ESMIC1"
+                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                codeSystemName="DNLAB"
+                                                displayName="Esame microscopico">
+                                                <translation code="ESMIC1"
+                                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                    codeSystemName="DNLAB"
+                                                    displayName="Esame microscopico" />
+                                            </code>
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <value xsi:type="ST">Cocchi Gram positivi</value>
+                                        </observation>
+                                    </entryRelationship>
+                                </act>
+                            </entry>
+                        </section>
+                    </component>
+                    <component>
+                        <section>
+                            <code code="CEMAN" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                codeSystemName="DNLAB"
+                                displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI">
+                                <translation code="CEMAN"
+                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                    codeSystemName="DNLAB"
+                                    displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI" />
+                            </code>
+                            <title>EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI</title>
+                            <text>
+                                <br />
+                                <list>
+                                    <item>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Esame</th>
+                                                    <th>Esito</th>
+                                                    <th>Abnormal Flag</th>
+                                                    <th>Unità di Misura</th>
+                                                    <th>Range di Riferimento</th>
+                                                    <th>Metodo</th>
+                                                </tr>
+                                                <tr ID="testID---CEMAN---CEMAN---3-0">
+                                                    <th>EMOCOLTURA DA VENA PERIFERICA PER RICERCA
+                                                        GERMI ANAEROBI</th>
+                                                    <td ID="SIGLA_NO_UOM103">Positivo</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Ceppo Identificato</th>
+                                                    <th>Nome</th>
+                                                    <th>InfoAgg.1</th>
+                                                    <th>InfoAgg.2</th>
+                                                    <th>Note</th>
+                                                </tr>
+                                                <tr
+                                                    ID="testMicroOrganism_CEMAN-1-CEMAN-1-0-bacfra-3-0-1">
+                                                    <td>Ceppo 1</td>
+                                                    <td>Bacteroides fragilis</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </item>
+                                </list>
+                            </text>
+                            <entry typeCode="DRIV">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <code code="CEMAN" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                        codeSystemName="DNLAB"
+                                        displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI">
+                                        <translation code="CEMAN"
+                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                            codeSystemName="DNLAB"
+                                            displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI" />
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <specimenPlayingEntity>
+                                                <code code="USUB"
+                                                    codeSystem="2.16.840.1.113883.5.129"
+                                                    codeSystemName="SpecimenType">
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="MATERIALE"
+                                                        displayName="Emocoltura" />
+                                                </code>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
+                                    <entryRelationship typeCode="COMP">
+                                        <organizer moodCode="EVN" classCode="CLUSTER">
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <specimen typeCode="SPC">
+                                                <specimenRole classCode="SPEC">
+                                                    <id root="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        extension="testMicroOrganism_CEMAN-1-CEMAN-1-0-bacfra-3-0-1" />
+                                                    <specimenPlayingEntity classCode="MIC">
+                                                        <code code="bacfra"
+                                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                            codeSystemName="DNLAB"
+                                                            displayName="Bacteroides fragilis" />
+                                                    </specimenPlayingEntity>
+                                                </specimenRole>
+                                            </specimen>
+                                            <component>
+                                                <observation moodCode="EVN" classCode="OBS">
+                                                    <code code="CEMAN"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                        codeSystemName="DNLAB"
+                                                        displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI">
+                                                        <translation code="CEMAN"
+                                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                            codeSystemName="DNLAB"
+                                                            displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI" />
+                                                    </code>
+                                                    <statusCode code="completed" />
+                                                    <effectiveTime value="20260101080000+0200" />
+                                                    <value xsi:type="ST">Positivo</value>
+                                                    <interpretationCode code="POS"
+                                                        codeSystem="2.16.840.1.113883.5.83"
+                                                        codeSystemName="HL7 Observation Interpretation" />
+                                                </observation>
+                                            </component>
+                                        </organizer>
+                                    </entryRelationship>
+                                </act>
+                            </entry>
+                        </section>
+                    </component>
+                    <component>
+                        <section>
+                            <code code="TP2" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                codeSystemName="DNLAB" displayName="Tempo di positivizzazione">
+                                <translation code="TP2" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                    codeSystemName="DNLAB" displayName="Tempo di positivizzazione" />
+                            </code>
+                            <title>Tempo di positivizzazione</title>
+                            <text>
+                                <br />
+                                <list>
+                                    <item>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Esame</th>
+                                                    <th>Esito</th>
+                                                    <th>Abnormal Flag</th>
+                                                    <th>Unità di Misura</th>
+                                                    <th>Range di Riferimento</th>
+                                                    <th>Metodo</th>
+                                                </tr>
+                                                <tr ID="testID---TP2---TP2---3-0">
+                                                    <th>Tempo di positivizzazione</th>
+                                                    <td ID="ALFA_NO_UOM104">0d 17h 56min</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </item>
+                                </list>
+                            </text>
+                            <entry typeCode="DRIV">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <code code="TP2" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                        codeSystemName="DNLAB"
+                                        displayName="Tempo di positivizzazione">
+                                        <translation code="TP2"
+                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                            codeSystemName="DNLAB"
+                                            displayName="Tempo di positivizzazione" />
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <specimenPlayingEntity>
+                                                <code code="USUB"
+                                                    codeSystem="2.16.840.1.113883.5.129"
+                                                    codeSystemName="SpecimenType">
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="MATERIALE"
+                                                        displayName="Emocoltura" />
+                                                </code>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
+                                    <entryRelationship typeCode="COMP">
+                                        <observation moodCode="EVN" classCode="OBS">
+                                            <code code="TP2"
+                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                codeSystemName="DNLAB"
+                                                displayName="Tempo di positivizzazione">
+                                                <translation code="TP2"
+                                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                    codeSystemName="DNLAB"
+                                                    displayName="Tempo di positivizzazione" />
+                                            </code>
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <value xsi:type="ST">0d 17h 56min</value>
+                                        </observation>
+                                    </entryRelationship>
+                                </act>
+                            </entry>
+                        </section>
+                    </component>
+                    <component>
+                        <section>
+                            <code code="ESMIC2" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                codeSystemName="DNLAB" displayName="Esame microscopico">
+                                <translation code="ESMIC2"
+                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                    codeSystemName="DNLAB" displayName="Esame microscopico" />
+                            </code>
+                            <title>Esame microscopico</title>
+                            <text>
+                                <br />
+                                <list>
+                                    <item>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Esame</th>
+                                                    <th>Esito</th>
+                                                    <th>Abnormal Flag</th>
+                                                    <th>Unità di Misura</th>
+                                                    <th>Range di Riferimento</th>
+                                                    <th>Metodo</th>
+                                                </tr>
+                                                <tr ID="testID---ESMIC2---ESMIC2---3-0">
+                                                    <th>Esame microscopico</th>
+                                                    <td ID="SIGLA_NO_UOM105">Bastoncini Gram
+                                                        negativi</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </item>
+                                </list>
+                            </text>
+                            <entry typeCode="DRIV">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <code code="ESMIC2" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                        codeSystemName="DNLAB" displayName="Esame microscopico">
+                                        <translation code="ESMIC2"
+                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                            codeSystemName="DNLAB" displayName="Esame microscopico" />
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <specimenPlayingEntity>
+                                                <code code="USUB"
+                                                    codeSystem="2.16.840.1.113883.5.129"
+                                                    codeSystemName="SpecimenType">
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="MATERIALE"
+                                                        displayName="Emocoltura" />
+                                                </code>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
+                                    <entryRelationship typeCode="COMP">
+                                        <observation moodCode="EVN" classCode="OBS">
+                                            <code code="ESMIC2"
+                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                codeSystemName="DNLAB"
+                                                displayName="Esame microscopico">
+                                                <translation code="ESMIC2"
+                                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                    codeSystemName="DNLAB"
+                                                    displayName="Esame microscopico" />
+                                            </code>
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <value xsi:type="ST">Bastoncini Gram negativi</value>
+                                        </observation>
+                                    </entryRelationship>
+                                </act>
+                            </entry>
+                        </section>
+                    </component>
+                    <component>
+                        <section>
+                            <code code="CEME2" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                codeSystemName="DNLAB"
+                                displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI II SET">
+                                <translation code="CEME2"
+                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                    codeSystemName="DNLAB"
+                                    displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI II SET" />
+                            </code>
+                            <title>EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI II SET</title>
+                            <text>
+                                <br />
+                                <list>
+                                    <item>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Esame</th>
+                                                    <th>Esito</th>
+                                                    <th>Abnormal Flag</th>
+                                                    <th>Unità di Misura</th>
+                                                    <th>Range di Riferimento</th>
+                                                    <th>Metodo</th>
+                                                </tr>
+                                                <tr ID="testID---CEME2---CEME2---4-0">
+                                                    <th>EMOCOLTURA DA VENA PERIFERICA PER RICERCA
+                                                        GERMI AEROBI II SET</th>
+                                                    <td ID="SIGLA_NO_UOM106">Positivo</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Ceppo Identificato</th>
+                                                    <th>Nome</th>
+                                                    <th>InfoAgg.1</th>
+                                                    <th>InfoAgg.2</th>
+                                                    <th>Note</th>
+                                                </tr>
+                                                <tr
+                                                    ID="testMicroOrganism_CEME2-1-CEME2-1-0-strfae-4-0-1">
+                                                    <td>Ceppo 1</td>
+                                                    <td>Enterococcus faecalis</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr
+                                                    ID="testMicroOrganism_CEME2-1-CEME2-1-0-stacpr-4-0-2">
+                                                    <td>Ceppo 2</td>
+                                                    <td>Staphylococcus caprae</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <th>Antibiogramma</th>
+                                                </tr>
+                                                <tr align="center">
+                                                    <th>Antibiotico</th>
+                                                    <th>RSI 1</th>
+                                                    <th>MIC 1</th>
+                                                    <th>RSI 2</th>
+                                                    <th>MIC 2</th>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Ampicillina</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>
+                                                        <=2
+                                                    </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Amoxicillina/acido clavulanico</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>
+                                                        <=2
+                                                    </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Clindamicina</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>
+                                                        <=0.12
+                                                    </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Daptomicina</td>
+                                                    <td>
+                                                        <content>-</content>
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>
+                                                        <content>-</content>
+                                                    </td>
+                                                    <td>0.25</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Eritromicina</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>0.5</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Acido fusidico</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td>
+                                                        <content>R</content>
+                                                    </td>
+                                                    <td>
+                                                        <=0.5
+                                                    </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Gentamicina</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>
+                                                        <=0.5
+                                                    </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Gentamicina - screening resistenza alto
+                                                        livello</td>
+                                                    <td>
+                                                        <content>-</content>
+                                                    </td>
+                                                    <td>Neg</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Kanamicina ad alto dosaggio (sinergia)</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>SYN-S</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Streptomicina ad alto dosaggio (sinergia)</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>SYN-S</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Resistenza inducibile alla Clindamicina</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td>
+                                                        <content>-</content>
+                                                    </td>
+                                                    <td>Neg</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Levofloxacina</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td>
+                                                        <content>I</content>
+                                                    </td>
+                                                    <td>0.25</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Linezolid</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Oxacillina</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>
+                                                        <=0.25
+                                                    </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Rifampicina</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>
+                                                        <=0.03
+                                                    </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Trimetoprim/Sulfametossazolo</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>
+                                                        <=10
+                                                    </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Tetraciclina</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>
+                                                        <=1
+                                                    </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Tigeciclina</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>
+                                                        <=0.12
+                                                    </td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>
+                                                        <=0.12
+                                                    </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Teicoplanina</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>
+                                                        <=0.5
+                                                    </td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Vancomicina</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>
+                                                        <=0.5
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_4-0-CEME2-1-CEME2-1-0-strfae-1-1" />
+                                                        MIC=Concentrazione minima inibente (mg/L) </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_4-0-CEME2-1-CEME2-1-0-strfae-1-2" />
+                                                        S/I/R= Categoria di interpretazione:
+                                                        S=Sensibile I= Sensibile ad alta esposizione
+                                                        R=Resistente </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_4-0-CEME2-1-CEME2-1-0-strfae-1-3" />
+                                                        Antibiogrammi interpretati secondo i criteri
+                                                        EUCAST (European Committee on Antimicrobial
+                                                        Susceptibility Testing - www.eucast.org) </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_4-0-CEME2-1-CEME2-1-0-strfae-1-4" />
+                                                        Trimetoprim/Sulfametossazolo su
+                                                        Enterobacterales e Acinetobacter spp.
+                                                        interpretato secondo i criteri CLSI. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_4-0-CEME2-1-CEME2-1-0-strfae-1-5" />
+                                                        Antimicogrammi interpretati secondo i
+                                                        criteri CLSI (Clinical Laboratory Standards
+                                                        Institute) </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_4-0-CEME2-1-CEME2-1-0-stacpr-2-1" />
+                                                        MIC=Concentrazione minima inibente (mg/L) </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_4-0-CEME2-1-CEME2-1-0-stacpr-2-2" />
+                                                        S/I/R= Categoria di interpretazione:
+                                                        S=Sensibile I= Sensibile ad alta esposizione
+                                                        R=Resistente </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_4-0-CEME2-1-CEME2-1-0-stacpr-2-3" />
+                                                        Antibiogrammi interpretati secondo i criteri
+                                                        EUCAST (European Committee on Antimicrobial
+                                                        Susceptibility Testing - www.eucast.org) </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_4-0-CEME2-1-CEME2-1-0-stacpr-2-4" />
+                                                        Trimetoprim/Sulfametossazolo su
+                                                        Enterobacterales e Acinetobacter spp.
+                                                        interpretato secondo i criteri CLSI. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_4-0-CEME2-1-CEME2-1-0-stacpr-2-5" />
+                                                        Antimicogrammi interpretati secondo i
+                                                        criteri CLSI (Clinical Laboratory Standards
+                                                        Institute) </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </item>
+                                </list>
+                                <br />
+                                <br />
+                            </text>
+                            <entry typeCode="DRIV">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <code code="CEME2" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                        codeSystemName="DNLAB"
+                                        displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI II SET">
+                                        <translation code="CEME2"
+                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                            codeSystemName="DNLAB"
+                                            displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI II SET" />
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <specimenPlayingEntity>
+                                                <code code="USUB"
+                                                    codeSystem="2.16.840.1.113883.5.129"
+                                                    codeSystemName="SpecimenType">
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="MATERIALE"
+                                                        displayName="Emocoltura" />
+                                                </code>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
+                                    <entryRelationship typeCode="COMP">
+                                        <organizer moodCode="EVN" classCode="CLUSTER">
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <specimen typeCode="SPC">
+                                                <specimenRole classCode="SPEC">
+                                                    <id root="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        extension="testMicroOrganism_CEME2-1-CEME2-1-0-strfae-4-0-1" />
+                                                    <specimenPlayingEntity classCode="MIC">
+                                                        <code code="strfae"
+                                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                            codeSystemName="DNLAB"
+                                                            displayName="Enterococcus faecalis" />
+                                                    </specimenPlayingEntity>
+                                                </specimenRole>
+                                            </specimen>
+                                            <component>
+                                                <observation moodCode="EVN" classCode="OBS">
+                                                    <code code="CEME2"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                        codeSystemName="DNLAB"
+                                                        displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI II SET">
+                                                        <translation code="CEME2"
+                                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                            codeSystemName="DNLAB"
+                                                            displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI II SET" />
+                                                    </code>
+                                                    <statusCode code="completed" />
+                                                    <effectiveTime value="20260101080000+0200" />
+                                                    <value xsi:type="ST">Positivo</value>
+                                                    <interpretationCode code="POS"
+                                                        codeSystem="2.16.840.1.113883.5.83"
+                                                        codeSystemName="HL7 Observation Interpretation" />
+                                                </observation>
+                                            </component>
+                                            <component>
+                                                <organizer moodCode="EVN" classCode="BATTERY">
+                                                    <code code="CEME2"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <statusCode code="completed" />
+                                                    <effectiveTime value="20260101080000+0200" />
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="am"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Ampicillina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=2
+                                                            </value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="amc"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Amoxicillina/acido clavulanico" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=2
+                                                            </value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="hlg"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Gentamicina - screening resistenza alto livello" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">Neg</value>
+                                                            <interpretationCode code=""
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="hls"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Streptomicina ad alto dosaggio (sinergia)" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">SYN-S</value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="hlk"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Kanamicina ad alto dosaggio (sinergia)" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">SYN-S</value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="va"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Vancomicina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="1" />
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="tpn"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Teicoplanina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=0.5
+                                                            </value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="tgc"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Tigeciclina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=0.12
+                                                            </value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="lnz"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Linezolid" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="1" />
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="dap"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Daptomicina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="4" />
+                                                            <interpretationCode code=""
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_4-0-CEME2-1-CEME2-1-0-strfae-1-1" />
+                                                                MIC=Concentrazione minima inibente
+                                                                (mg/L) </text>
+                                                        </act>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_4-0-CEME2-1-CEME2-1-0-strfae-1-2" />
+                                                                S/I/R= Categoria di interpretazione:
+                                                                S=Sensibile I= Sensibile ad alta
+                                                                esposizione R=Resistente </text>
+                                                        </act>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_4-0-CEME2-1-CEME2-1-0-strfae-1-3" />
+                                                                Antibiogrammi interpretati secondo i
+                                                                criteri EUCAST (European Committee
+                                                                on Antimicrobial Susceptibility
+                                                                Testing - www.eucast.org) </text>
+                                                        </act>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_4-0-CEME2-1-CEME2-1-0-strfae-1-4" />
+                                                                Trimetoprim/Sulfametossazolo su
+                                                                Enterobacterales e Acinetobacter
+                                                                spp. interpretato secondo i criteri
+                                                                CLSI. </text>
+                                                        </act>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_4-0-CEME2-1-CEME2-1-0-strfae-1-5" />
+                                                                Antimicogrammi interpretati secondo
+                                                                i criteri CLSI (Clinical Laboratory
+                                                                Standards Institute) </text>
+                                                        </act>
+                                                    </component>
+                                                </organizer>
+                                            </component>
+                                        </organizer>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode="COMP">
+                                        <organizer moodCode="EVN" classCode="CLUSTER">
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <specimen typeCode="SPC">
+                                                <specimenRole classCode="SPEC">
+                                                    <id root="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        extension="testMicroOrganism_CEME2-1-CEME2-1-0-stacpr-4-0-2" />
+                                                    <specimenPlayingEntity classCode="MIC">
+                                                        <code code="stacpr"
+                                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                            codeSystemName="DNLAB"
+                                                            displayName="Staphylococcus caprae" />
+                                                    </specimenPlayingEntity>
+                                                </specimenRole>
+                                            </specimen>
+                                            <component>
+                                                <observation moodCode="EVN" classCode="OBS">
+                                                    <code code="CEME2"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                        codeSystemName="DNLAB"
+                                                        displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI II SET">
+                                                        <translation code="CEME2"
+                                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                            codeSystemName="DNLAB"
+                                                            displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI AEROBI II SET" />
+                                                    </code>
+                                                    <statusCode code="completed" />
+                                                    <effectiveTime value="20260101080000+0200" />
+                                                    <value xsi:type="ST">Positivo</value>
+                                                    <interpretationCode code="POS"
+                                                        codeSystem="2.16.840.1.113883.5.83"
+                                                        codeSystemName="HL7 Observation Interpretation" />
+                                                </observation>
+                                            </component>
+                                            <component>
+                                                <organizer moodCode="EVN" classCode="BATTERY">
+                                                    <code code="CEME2"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <statusCode code="completed" />
+                                                    <effectiveTime value="20260101080000+0200" />
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="ox"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Oxacillina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=0.25
+                                                            </value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="lev"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Levofloxacina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="0.25" />
+                                                            <interpretationCode code="I"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="gm"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Gentamicina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=0.5
+                                                            </value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="va"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Vancomicina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=0.5
+                                                            </value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="tpn"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Teicoplanina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="1" />
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="e"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Eritromicina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="0.5" />
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="cc"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Clindamicina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=0.12
+                                                            </value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="icr"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Resistenza inducibile alla Clindamicina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">Neg</value>
+                                                            <interpretationCode code=""
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="tet"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Tetraciclina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=1
+                                                            </value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="tgc"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Tigeciclina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=0.12
+                                                            </value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="lnz"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Linezolid" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="2" />
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="dap"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Daptomicina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="0.25" />
+                                                            <interpretationCode code=""
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="rif"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Rifampicina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=0.03
+                                                            </value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="sxt"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Trimetoprim/Sulfametossazolo" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=10
+                                                            </value>
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="fa"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Acido fusidico" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="ST">
+                                                                <=0.5
+                                                            </value>
+                                                            <interpretationCode code="R"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_4-0-CEME2-1-CEME2-1-0-stacpr-2-1" />
+                                                                MIC=Concentrazione minima inibente
+                                                                (mg/L) </text>
+                                                        </act>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_4-0-CEME2-1-CEME2-1-0-stacpr-2-2" />
+                                                                S/I/R= Categoria di interpretazione:
+                                                                S=Sensibile I= Sensibile ad alta
+                                                                esposizione R=Resistente </text>
+                                                        </act>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_4-0-CEME2-1-CEME2-1-0-stacpr-2-3" />
+                                                                Antibiogrammi interpretati secondo i
+                                                                criteri EUCAST (European Committee
+                                                                on Antimicrobial Susceptibility
+                                                                Testing - www.eucast.org) </text>
+                                                        </act>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_4-0-CEME2-1-CEME2-1-0-stacpr-2-4" />
+                                                                Trimetoprim/Sulfametossazolo su
+                                                                Enterobacterales e Acinetobacter
+                                                                spp. interpretato secondo i criteri
+                                                                CLSI. </text>
+                                                        </act>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_4-0-CEME2-1-CEME2-1-0-stacpr-2-5" />
+                                                                Antimicogrammi interpretati secondo
+                                                                i criteri CLSI (Clinical Laboratory
+                                                                Standards Institute) </text>
+                                                        </act>
+                                                    </component>
+                                                </organizer>
+                                            </component>
+                                        </organizer>
+                                    </entryRelationship>
+                                </act>
+                            </entry>
+                        </section>
+                    </component>
+                    <component>
+                        <section>
+                            <code code="TP3" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                codeSystemName="DNLAB" displayName="Tempo di positivizzazione">
+                                <translation code="TP3" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                    codeSystemName="DNLAB" displayName="Tempo di positivizzazione" />
+                            </code>
+                            <title>Tempo di positivizzazione</title>
+                            <text>
+                                <br />
+                                <list>
+                                    <item>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Esame</th>
+                                                    <th>Esito</th>
+                                                    <th>Abnormal Flag</th>
+                                                    <th>Unità di Misura</th>
+                                                    <th>Range di Riferimento</th>
+                                                    <th>Metodo</th>
+                                                </tr>
+                                                <tr ID="testID---TP3---TP3---4-0">
+                                                    <th>Tempo di positivizzazione</th>
+                                                    <td ID="ALFA_NO_UOM107">0d 12h 5min</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </item>
+                                </list>
+                            </text>
+                            <entry typeCode="DRIV">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <code code="TP3" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                        codeSystemName="DNLAB"
+                                        displayName="Tempo di positivizzazione">
+                                        <translation code="TP3"
+                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                            codeSystemName="DNLAB"
+                                            displayName="Tempo di positivizzazione" />
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <specimenPlayingEntity>
+                                                <code code="USUB"
+                                                    codeSystem="2.16.840.1.113883.5.129"
+                                                    codeSystemName="SpecimenType">
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="MATERIALE"
+                                                        displayName="Emocoltura" />
+                                                </code>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
+                                    <entryRelationship typeCode="COMP">
+                                        <observation moodCode="EVN" classCode="OBS">
+                                            <code code="TP3"
+                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                codeSystemName="DNLAB"
+                                                displayName="Tempo di positivizzazione">
+                                                <translation code="TP3"
+                                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                    codeSystemName="DNLAB"
+                                                    displayName="Tempo di positivizzazione" />
+                                            </code>
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <value xsi:type="ST">0d 12h 5min</value>
+                                        </observation>
+                                    </entryRelationship>
+                                </act>
+                            </entry>
+                        </section>
+                    </component>
+                    <component>
+                        <section>
+                            <code code="ESMIC3" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                codeSystemName="DNLAB" displayName="Esame microscopico">
+                                <translation code="ESMIC3"
+                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                    codeSystemName="DNLAB" displayName="Esame microscopico" />
+                            </code>
+                            <title>Esame microscopico</title>
+                            <text>
+                                <br />
+                                <list>
+                                    <item>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Esame</th>
+                                                    <th>Esito</th>
+                                                    <th>Abnormal Flag</th>
+                                                    <th>Unità di Misura</th>
+                                                    <th>Range di Riferimento</th>
+                                                    <th>Metodo</th>
+                                                </tr>
+                                                <tr ID="testID---ESMIC3---ESMIC3---4-0">
+                                                    <th>Esame microscopico</th>
+                                                    <td ID="SIGLA_NO_UOM108">Cocchi Gram positivi</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </item>
+                                </list>
+                            </text>
+                            <entry typeCode="DRIV">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <code code="ESMIC3" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                        codeSystemName="DNLAB" displayName="Esame microscopico">
+                                        <translation code="ESMIC3"
+                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                            codeSystemName="DNLAB" displayName="Esame microscopico" />
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <specimenPlayingEntity>
+                                                <code code="USUB"
+                                                    codeSystem="2.16.840.1.113883.5.129"
+                                                    codeSystemName="SpecimenType">
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="MATERIALE"
+                                                        displayName="Emocoltura" />
+                                                </code>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
+                                    <entryRelationship typeCode="COMP">
+                                        <observation moodCode="EVN" classCode="OBS">
+                                            <code code="ESMIC3"
+                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                codeSystemName="DNLAB"
+                                                displayName="Esame microscopico">
+                                                <translation code="ESMIC3"
+                                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                    codeSystemName="DNLAB"
+                                                    displayName="Esame microscopico" />
+                                            </code>
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <value xsi:type="ST">Cocchi Gram positivi</value>
+                                        </observation>
+                                    </entryRelationship>
+                                </act>
+                            </entry>
+                        </section>
+                    </component>
+                    <component>
+                        <section>
+                            <code code="CEMN2" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                codeSystemName="DNLAB"
+                                displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI II SET">
+                                <translation code="CEMN2"
+                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                    codeSystemName="DNLAB"
+                                    displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI II SET" />
+                            </code>
+                            <title>EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI II SET</title>
+                            <text>
+                                <br />
+                                <list>
+                                    <item>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Esame</th>
+                                                    <th>Esito</th>
+                                                    <th>Abnormal Flag</th>
+                                                    <th>Unità di Misura</th>
+                                                    <th>Range di Riferimento</th>
+                                                    <th>Metodo</th>
+                                                </tr>
+                                                <tr ID="testID---CEMN2---CEMN2---5-0">
+                                                    <th>EMOCOLTURA DA VENA PERIFERICA PER RICERCA
+                                                        GERMI ANAEROBI II SET</th>
+                                                    <td ID="SIGLA_NO_UOM109">Positivo</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Ceppo Identificato</th>
+                                                    <th>Nome</th>
+                                                    <th>InfoAgg.1</th>
+                                                    <th>InfoAgg.2</th>
+                                                    <th>Note</th>
+                                                </tr>
+                                                <tr
+                                                    ID="testMicroOrganism_CEMN2-1-CEMN2-1-0-bacfra-5-0-1">
+                                                    <td>Ceppo 1</td>
+                                                    <td>Bacteroides fragilis</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <th>Antibiogramma</th>
+                                                </tr>
+                                                <tr align="center">
+                                                    <th>Antibiotico</th>
+                                                    <th>RSI 1</th>
+                                                    <th>MIC 1</th>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Amoxicillina/acido clavulanico</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>0.38</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Clindamicina</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>0.50</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Meropenem</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>0.047</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Metronidazolo</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td>Piperacillina/tazobactam</td>
+                                                    <td>
+                                                        <content>S</content>
+                                                    </td>
+                                                    <td>1.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_5-0-CEMN2-1-CEMN2-1-0-bacfra-1-1" />
+                                                        MIC=Concentrazione minima inibente (mg/L) </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_5-0-CEMN2-1-CEMN2-1-0-bacfra-1-2" />
+                                                        S/I/R= Categoria di interpretazione:
+                                                        S=Sensibile I= Sensibile ad alta esposizione
+                                                        R=Resistente </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_5-0-CEMN2-1-CEMN2-1-0-bacfra-1-3" />
+                                                        Antibiogrammi interpretati secondo i criteri
+                                                        EUCAST (European Committee on Antimicrobial
+                                                        Susceptibility Testing - www.eucast.org) </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_5-0-CEMN2-1-CEMN2-1-0-bacfra-1-4" />
+                                                        Trimetoprim/Sulfametossazolo su
+                                                        Enterobacterales e Acinetobacter spp.
+                                                        interpretato secondo i criteri CLSI. </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <content
+                                                            ID="legend_5-0-CEMN2-1-CEMN2-1-0-bacfra-1-5" />
+                                                        Antimicogrammi interpretati secondo i
+                                                        criteri CLSI (Clinical Laboratory Standards
+                                                        Institute) </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </item>
+                                </list>
+                                <br />
+                                <br />
+                            </text>
+                            <entry typeCode="DRIV">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <code code="CEMN2" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                        codeSystemName="DNLAB"
+                                        displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI II SET">
+                                        <translation code="CEMN2"
+                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                            codeSystemName="DNLAB"
+                                            displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI II SET" />
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <specimenPlayingEntity>
+                                                <code code="USUB"
+                                                    codeSystem="2.16.840.1.113883.5.129"
+                                                    codeSystemName="SpecimenType">
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="MATERIALE"
+                                                        displayName="Emocoltura" />
+                                                </code>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
+                                    <entryRelationship typeCode="COMP">
+                                        <organizer moodCode="EVN" classCode="CLUSTER">
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <specimen typeCode="SPC">
+                                                <specimenRole classCode="SPEC">
+                                                    <id root="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        extension="testMicroOrganism_CEMN2-1-CEMN2-1-0-bacfra-5-0-1" />
+                                                    <specimenPlayingEntity classCode="MIC">
+                                                        <code code="bacfra"
+                                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                            codeSystemName="DNLAB"
+                                                            displayName="Bacteroides fragilis" />
+                                                    </specimenPlayingEntity>
+                                                </specimenRole>
+                                            </specimen>
+                                            <component>
+                                                <observation moodCode="EVN" classCode="OBS">
+                                                    <code code="CEMN2"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                        codeSystemName="DNLAB"
+                                                        displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI II SET">
+                                                        <translation code="CEMN2"
+                                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                            codeSystemName="DNLAB"
+                                                            displayName="EMOCOLTURA DA VENA PERIFERICA PER RICERCA GERMI ANAEROBI II SET" />
+                                                    </code>
+                                                    <statusCode code="completed" />
+                                                    <effectiveTime value="20260101080000+0200" />
+                                                    <value xsi:type="ST">Positivo</value>
+                                                    <interpretationCode code="POS"
+                                                        codeSystem="2.16.840.1.113883.5.83"
+                                                        codeSystemName="HL7 Observation Interpretation" />
+                                                </observation>
+                                            </component>
+                                            <component>
+                                                <organizer moodCode="EVN" classCode="BATTERY">
+                                                    <code code="CEMN2"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <statusCode code="completed" />
+                                                    <effectiveTime value="20260101080000+0200" />
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="amc"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Amoxicillina/acido clavulanico" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="0.38" />
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="tzp"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Piperacillina/tazobactam" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="1.5" />
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="mem"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Meropenem" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="0.047" />
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="cc"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Clindamicina" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="0.50" />
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component>
+                                                        <observation moodCode="EVN" classCode="OBS">
+                                                            <code code="met"
+                                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                                codeSystemName="DNLAB"
+                                                                displayName="Metronidazolo" />
+                                                            <statusCode code="completed" />
+                                                            <effectiveTime
+                                                                value="20260101080000+0200" />
+                                                            <value xsi:type="REAL" value="1" />
+                                                            <interpretationCode code="S"
+                                                                codeSystem="2.16.840.1.113883.5.83"
+                                                                codeSystemName="HL7 Observation Interpretation" />
+                                                        </observation>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_5-0-CEMN2-1-CEMN2-1-0-bacfra-1-1" />
+                                                                MIC=Concentrazione minima inibente
+                                                                (mg/L) </text>
+                                                        </act>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_5-0-CEMN2-1-CEMN2-1-0-bacfra-1-2" />
+                                                                S/I/R= Categoria di interpretazione:
+                                                                S=Sensibile I= Sensibile ad alta
+                                                                esposizione R=Resistente </text>
+                                                        </act>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_5-0-CEMN2-1-CEMN2-1-0-bacfra-1-3" />
+                                                                Antibiogrammi interpretati secondo i
+                                                                criteri EUCAST (European Committee
+                                                                on Antimicrobial Susceptibility
+                                                                Testing - www.eucast.org) </text>
+                                                        </act>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_5-0-CEMN2-1-CEMN2-1-0-bacfra-1-4" />
+                                                                Trimetoprim/Sulfametossazolo su
+                                                                Enterobacterales e Acinetobacter
+                                                                spp. interpretato secondo i criteri
+                                                                CLSI. </text>
+                                                        </act>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <act moodCode="EVN" classCode="ACT">
+                                                            <code code="48767-8"
+                                                                codeSystem="2.16.840.1.113883.6.1"
+                                                                codeSystemName="LOINC"
+                                                                displayName="Annotation Comment" />
+                                                            <text>
+                                                                <reference
+                                                                    value="#legend_5-0-CEMN2-1-CEMN2-1-0-bacfra-1-5" />
+                                                                Antimicogrammi interpretati secondo
+                                                                i criteri CLSI (Clinical Laboratory
+                                                                Standards Institute) </text>
+                                                        </act>
+                                                    </component>
+                                                </organizer>
+                                            </component>
+                                        </organizer>
+                                    </entryRelationship>
+                                </act>
+                            </entry>
+                        </section>
+                    </component>
+                    <component>
+                        <section>
+                            <code code="TP4" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                codeSystemName="DNLAB" displayName="Tempo di positivizzazione">
+                                <translation code="TP4" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                    codeSystemName="DNLAB" displayName="Tempo di positivizzazione" />
+                            </code>
+                            <title>Tempo di positivizzazione</title>
+                            <text>
+                                <br />
+                                <list>
+                                    <item>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Esame</th>
+                                                    <th>Esito</th>
+                                                    <th>Abnormal Flag</th>
+                                                    <th>Unità di Misura</th>
+                                                    <th>Range di Riferimento</th>
+                                                    <th>Metodo</th>
+                                                </tr>
+                                                <tr ID="testID---TP4---TP4---5-0">
+                                                    <th>Tempo di positivizzazione</th>
+                                                    <td ID="ALFA_NO_UOM110">0d 18h 26min</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </item>
+                                </list>
+                            </text>
+                            <entry typeCode="DRIV">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <code code="TP4" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                        codeSystemName="DNLAB"
+                                        displayName="Tempo di positivizzazione">
+                                        <translation code="TP4"
+                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                            codeSystemName="DNLAB"
+                                            displayName="Tempo di positivizzazione" />
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <specimenPlayingEntity>
+                                                <code code="USUB"
+                                                    codeSystem="2.16.840.1.113883.5.129"
+                                                    codeSystemName="SpecimenType">
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="MATERIALE"
+                                                        displayName="Emocoltura" />
+                                                </code>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
+                                    <entryRelationship typeCode="COMP">
+                                        <observation moodCode="EVN" classCode="OBS">
+                                            <code code="TP4"
+                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                codeSystemName="DNLAB"
+                                                displayName="Tempo di positivizzazione">
+                                                <translation code="TP4"
+                                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                    codeSystemName="DNLAB"
+                                                    displayName="Tempo di positivizzazione" />
+                                            </code>
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <value xsi:type="ST">0d 18h 26min</value>
+                                        </observation>
+                                    </entryRelationship>
+                                </act>
+                            </entry>
+                        </section>
+                    </component>
+                    <component>
+                        <section>
+                            <code code="ESMIC4" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                codeSystemName="DNLAB" displayName="Esame microscopico">
+                                <translation code="ESMIC4"
+                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                    codeSystemName="DNLAB" displayName="Esame microscopico" />
+                            </code>
+                            <title>Esame microscopico</title>
+                            <text>
+                                <br />
+                                <list>
+                                    <item>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Esame</th>
+                                                    <th>Esito</th>
+                                                    <th>Abnormal Flag</th>
+                                                    <th>Unità di Misura</th>
+                                                    <th>Range di Riferimento</th>
+                                                    <th>Metodo</th>
+                                                </tr>
+                                                <tr ID="testID---ESMIC4---ESMIC4---5-0">
+                                                    <th>Esame microscopico</th>
+                                                    <td ID="SIGLA_NO_UOM111">Bastoncini Gram
+                                                        negativi</td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                    <td> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </item>
+                                </list>
+                            </text>
+                            <entry typeCode="DRIV">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <code code="ESMIC4" codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                        codeSystemName="DNLAB" displayName="Esame microscopico">
+                                        <translation code="ESMIC4"
+                                            codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                            codeSystemName="DNLAB" displayName="Esame microscopico" />
+                                    </code>
+                                    <statusCode code="completed" />
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <specimenPlayingEntity>
+                                                <code code="USUB"
+                                                    codeSystem="2.16.840.1.113883.5.129"
+                                                    codeSystemName="SpecimenType">
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="DNLAB" />
+                                                    <translation code="SAE"
+                                                        codeSystem="2.16.840.1.113883.2.9.2.70.6.1"
+                                                        codeSystemName="MATERIALE"
+                                                        displayName="Emocoltura" />
+                                                </code>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
+                                    <entryRelationship typeCode="COMP">
+                                        <observation moodCode="EVN" classCode="OBS">
+                                            <code code="ESMIC4"
+                                                codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                codeSystemName="DNLAB"
+                                                displayName="Esame microscopico">
+                                                <translation code="ESMIC4"
+                                                    codeSystem="2.16.840.1.113883.2.9.2.70.6.11"
+                                                    codeSystemName="DNLAB"
+                                                    displayName="Esame microscopico" />
+                                            </code>
+                                            <statusCode code="completed" />
+                                            <effectiveTime value="20260101080000+0200" />
+                                            <value xsi:type="ST">Bastoncini Gram negativi</value>
+                                        </observation>
+                                    </entryRelationship>
+                                </act>
+                            </entry>
+                        </section>
+                    </component>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
