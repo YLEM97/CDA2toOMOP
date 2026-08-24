@@ -8,8 +8,8 @@ The project focuses on the secondary use of microbiology laboratory data, with p
 
 ```text
 .
-├── etl_cda2_omop.py
-├── vocab_lookup.py
+├── etl_cda2_omop_pub.py
+├── vocab_lookup_pub.py
 ├── example_cda2.xml
 ├── example_output.xlsx
 └── README.md
